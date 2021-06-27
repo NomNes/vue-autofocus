@@ -3,7 +3,7 @@ import { Directive, Plugin } from 'vue'
 
 export const autofocus: Directive = {
   mounted(el) {
-    el.focus()
+    setTimeout(() => el.focus())
   },
 }
 
