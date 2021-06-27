@@ -1,0 +1,25 @@
+{
+  "name": "vue-autofocus",
+  "version": "0.0.1",
+  "description": "vue autofocus directive",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "author": "Nikita Umnov <nomnes1990@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rm -r ./dist && rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
+    "rollup": "^2.52.3",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4",
+    "vue": "^3.1.2"
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "types": "index.d.ts"
+}
