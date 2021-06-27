@@ -8,7 +8,7 @@ export const autofocus: Directive = {
 }
 
 const plugin: Plugin = (app: App, options) => {
-  app.directive(options.name || 'autofocus', autofocus)
+  app.directive(options?.name || 'autofocus', autofocus)
 }
 
 export default plugin
